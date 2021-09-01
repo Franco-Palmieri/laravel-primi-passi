@@ -9,7 +9,7 @@
 </head>
 <body>
     <style>
-        *{
+                *{
             margin: 0 auto;
         }
         .container{
@@ -17,27 +17,35 @@
             margin: 0 auto;
             text-align: center;
         }
-        nav{
+        .nav{
             height: 50px;
             border: 2px solid lightblue;
-        }
-        nav ul{
             display: flex;
-
+            align-items: center;
+            justify-content: space-around;
         }
-
+        .nav ul{
+            display:flex;
+            justify-content: space-around;
+        }
+        .nav ul li{
+            list-style:none;
+        }
+        a{
+            text-decoration: none;
+        }
         main{
             height: calc(100vh - 50px);
             background-color: white;
         }
     </style>
-    <nav>
+    <div class="nav">
         <ul>
             <li><a href="index">Home</a></li>
             <li><a href="description">Chi Siamo</a></li>
             <li><a href="about">About me</a></li>
         </ul>
-    </nav>
+    </div>
     <main>
         <div class="container">
             <h1> HELLO {{$name}}</h1>
