@@ -9,7 +9,7 @@
 </head>
 <body>
     <style>
-                *{
+        *{
             margin: 0 auto;
         }
         .container{
@@ -22,11 +22,11 @@
             border: 2px solid lightblue;
             display: flex;
             align-items: center;
-            justify-content: space-around;
         }
         .nav ul{
             display:flex;
             justify-content: space-around;
+            width: 100%;
         }
         .nav ul li{
             list-style:none;
